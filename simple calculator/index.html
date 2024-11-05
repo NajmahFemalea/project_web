@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay('%')" class="operator-btn">%</button>
+            <button onclick="appendToDisplay('√')" class="operator-btn">√</button>
+            <button onclick="appendToDisplay('²')" class="operator-btn">²</button>
+            <button onclick="appendToDisplay('sin')" class="operator-btn">sin</button>
+            <button onclick="appendToDisplay('cos')" class="operator-btn">cos</button>
+            <button onclick="appendToDisplay('tan')" class="operator-btn">tan</button>
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <div id="calculator-footer">
+        <p>Made by <span>Najmah Femalea</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
